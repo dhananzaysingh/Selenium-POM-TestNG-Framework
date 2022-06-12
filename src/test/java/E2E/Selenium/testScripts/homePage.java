@@ -22,8 +22,8 @@ public class homePage extends E2E.Selenium.resources.base {
 		driver.get(prop.getProperty("url"));
 	}
 	
-	@Test(dataProvider="getData")
-	public void basePageNavigation(String email, String password)
+	@Test
+	public void basePageNavigation()
 	{
 		
 		
@@ -32,23 +32,10 @@ public class homePage extends E2E.Selenium.resources.base {
 		l.Login().click();
 		
 		loginPage lp = new loginPage(driver);
-		lp.getEmail().sendKeys(email);
-		lp.getPassword().sendKeys(password);
+		lp.getEmail().sendKeys("email");
+		lp.getPassword().sendKeys("password");
 		lp.submitButton().click();
 		}
-	
-	@DataProvider
-	public Object[][] getData()
-	{
-		Object[][] obj = new Object[2][2];
-		
-		obj[0][0]="restricteduser@gmail.com";
-		obj[0][1]="123";
-		obj[1][0]="nonrestricteduser@gmail.com";
-		obj[1][1]="1234";
-		
-		return obj;
-	}
 	
 	@AfterTest
 	public void closeBrowser()
