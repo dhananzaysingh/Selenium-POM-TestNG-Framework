@@ -13,7 +13,7 @@ import E2E.Selenium.page.loginPage;
 
 
 
-public class homePage extends E2E.Selenium.resources.base {
+public class homePageTest extends E2E.Selenium.resources.base {
 	
 	@BeforeTest
 	public void openBrowser() throws IOException
