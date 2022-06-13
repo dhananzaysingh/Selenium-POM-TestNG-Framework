@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="E2E.Selenium.testScripts.homePage">
+      <class name="E2E.Selenium.testScripts.homePageTest">
         <methods>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
-          <include name="openBrowser"/>
           <include name="closeBrowser"/>
+          <include name="basePageNavigation"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- E2E.Selenium.testScripts.homePage -->
+      </class> <!-- E2E.Selenium.testScripts.homePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
