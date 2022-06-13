@@ -1,4 +1,4 @@
-package E2E.Selenium.resources;
+package E2E.Selenium.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
